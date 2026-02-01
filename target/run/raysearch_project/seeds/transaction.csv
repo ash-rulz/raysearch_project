@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "warehouse"."main_raw"."transaction";
+    -- dbt seed --
+    
+          COPY "warehouse"."main_raw"."transaction" FROM 'C:\Users\AMANDAKA\Workspaces\raysearch_project\seeds\transaction.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

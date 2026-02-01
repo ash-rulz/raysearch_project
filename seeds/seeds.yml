@@ -1,0 +1,64 @@
+version: 2
+
+seeds:
+  - name: customer
+    description: Raw customer seed
+    columns:
+      - name: customerID
+        tests:
+          - not_null
+      - name: state
+        tests:
+          - accepted_values:
+              values: ['VALIDATED','SIGNUP','INACTIVE']
+      - name: VIP
+        tests:
+          - accepted_values:
+              values: [0,1]
+      - name: KYC
+        tests:
+          - accepted_values:
+              values: [0,1]
+      - name: wantsNewsletter
+        tests:
+          - accepted_values:
+              values: [0,1]
+      - name: latestUpdate
+        tests:
+          - not_null
+
+  - name: transaction
+    description: Transactions seed
+    columns:
+      - name: customerId
+        tests:
+          - not_null
+          - relationships:
+              to: ref('customer')
+              field: customerID
+      - name: amount
+        tests:
+          - not_null
+      - name: txType
+        tests:
+          - accepted_values:
+              values: ['DEPOSIT','WITHDRAWAL']
+      - name: txCurrency
+        tests:
+          - not_null
+          - relationships:
+              to: ref('currency_exchange')
+              field: currency
+      - name: date
+        tests:
+          - not_null
+
+  - name: currency_exchange
+    description: Currency exchange rates seed
+    columns:
+      - name: date
+        tests: [not_null]
+      - name: currency
+        tests: [not_null]
+      - name: baseRateEuro
+        tests: [not_null]

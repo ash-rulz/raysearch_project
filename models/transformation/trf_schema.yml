@@ -1,0 +1,52 @@
+version: 2
+
+models:
+  - name: trf_customer_scd2
+    description: SCD2 customer history derived from stg_customer
+    columns:
+      - name: customer_id
+        tests: [not_null]
+      - name: etl_valid_from
+        tests: [not_null]
+      - name: is_current
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [customer_id, etl_valid_from]
+
+  - name: trf_currency_exchange
+    description: Single-currency exchange rate per date
+    columns:
+      - name: rate_date
+        tests: [not_null]
+      - name: currency_code
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [rate_date, currency_code]
+
+  - name: trf_transaction
+    description: Aggregated transactions by date/customer/country/account_type
+    columns:
+      - name: transaction_date
+        tests: [not_null]
+      - name: customer_id
+        tests: [not_null]
+      - name: country_code
+        tests: [not_null]
+      - name: account_type
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [transaction_date, customer_id, country_code, account_type]
+
+  - name: trf_currency_exchange
+    description: SCD2 exchange rate timeline for a single currency
+    columns:
+      - name: rate_date
+        tests: [not_null]
+      - name: currency_code
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [rate_date, currency_code]

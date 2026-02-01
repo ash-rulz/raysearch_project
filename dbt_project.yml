@@ -1,0 +1,34 @@
+﻿name: 'raysearch_project'
+version: '1.0'
+config-version: 2
+profile: 'raysearch_project'
+
+model-paths: ['models']
+analysis-paths: ['analysis']
+test-paths: ['tests', 'models/transformation/tests']
+macro-paths: ['macros']
+seed-paths: ['seeds']
+snapshot-paths: ['snapshots']
+
+target-path: 'target'
+clean-targets: ['target', 'dbt_packages']
+
+models:
+  raysearch_project:
+    staging:
+      +schema: stg
+      +materialized: view
+    transformation:
+      +schema: trf
+      +materialized: table
+    marts:
+      +schema: dm
+      +materialized: table
+
+seeds:
+  raysearch_project:
+    +schema: raw            # put all seeds in schema 'raw' (override if desired)
+    +quote_columns: false   # avoid quoting column names unless needed
+    customer: {}
+    transaction: {}
+    currency_exchange: {}

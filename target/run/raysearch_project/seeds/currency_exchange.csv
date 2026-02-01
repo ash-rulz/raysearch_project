@@ -1,0 +1,11 @@
+
+    
+    
+    truncate table "warehouse"."main_raw"."currency_exchange";
+    -- dbt seed --
+    
+          COPY "warehouse"."main_raw"."currency_exchange" FROM 'C:\Users\AMANDAKA\Workspaces\raysearch_project\seeds\currency_exchange.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
