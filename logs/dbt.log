@@ -14377,3 +14377,1530 @@ parsing.
 [0m20:37:01.564717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024141A47890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024141627530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024140E993D0>]}
 [0m20:37:01.565903 [debug] [MainThread]: Flushing usage events
 [0m20:37:03.083684 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:19:36.928366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767CF64830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767E09FED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767E09F9D0>]}
+
+
+============================== 10:19:36.935551 | 3ee3593a-1684-4de7-ad9f-ade90ce64810 ==============================
+[0m10:19:36.935551 [info ] [MainThread]: Running with dbt=1.11.2
+[0m10:19:36.936243 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\AMANDAKA\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\AMANDAKA\\Workspaces\\raysearch_project\\logs'}
+[0m10:19:37.437585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767D3D6060>]}
+[0m10:19:37.490032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F0E27A0>]}
+[0m10:19:37.514363 [info ] [MainThread]: Registered adapter: duckdb=1.10.0
+[0m10:19:37.977868 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m10:19:42.254319 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m10:19:42.254996 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m10:19:42.255367 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m10:19:42.262310 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.raysearch_project.marts
+[0m10:19:42.315636 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F5E6C50>]}
+[0m10:19:42.490070 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AMANDAKA\Workspaces\raysearch_project\target\manifest.json
+[0m10:19:42.521182 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AMANDAKA\Workspaces\raysearch_project\target\semantic_manifest.json
+[0m10:19:42.594487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F978320>]}
+[0m10:19:42.595202 [info ] [MainThread]: Found 8 models, 1 snapshot, 3 seeds, 30 data tests, 586 macros
+[0m10:19:42.595800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F767CB0>]}
+[0m10:19:42.598910 [info ] [MainThread]: 
+[0m10:19:42.599511 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:19:42.600038 [info ] [MainThread]: 
+[0m10:19:42.600815 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m10:19:42.605408 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main_trf'
+[0m10:19:42.613021 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main_stg'
+[0m10:19:42.619992 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_warehouse_main_raw'
+[0m10:19:49.414455 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_trf"
+[0m10:19:49.414996 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_stg"
+[0m10:19:49.415470 [debug] [ThreadPool]: On list_warehouse_main_trf: BEGIN
+[0m10:19:49.415672 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_raw"
+[0m10:19:49.415881 [debug] [ThreadPool]: On list_warehouse_main_stg: BEGIN
+[0m10:19:49.416083 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:19:49.416274 [debug] [ThreadPool]: On list_warehouse_main_raw: BEGIN
+[0m10:19:49.416453 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:19:49.416964 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:19:49.453646 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m10:19:49.454096 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m10:19:49.454340 [debug] [ThreadPool]: SQL status: OK in 0.038 seconds
+[0m10:19:49.454580 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_trf"
+[0m10:19:49.454802 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_raw"
+[0m10:19:49.455016 [debug] [ThreadPool]: Using duckdb connection "list_warehouse_main_stg"
+[0m10:19:49.455246 [debug] [ThreadPool]: On list_warehouse_main_trf: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "connection_name": "list_warehouse_main_trf"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_trf'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m10:19:49.455466 [debug] [ThreadPool]: On list_warehouse_main_raw: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "connection_name": "list_warehouse_main_raw"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_raw'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m10:19:49.455690 [debug] [ThreadPool]: On list_warehouse_main_stg: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "connection_name": "list_warehouse_main_stg"} */
+select
+      'warehouse' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main_stg'
+    and lower(table_catalog) = 'warehouse'
+  
+[0m10:19:49.469036 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m10:19:49.469754 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m10:19:49.470155 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m10:19:49.471312 [debug] [ThreadPool]: On list_warehouse_main_raw: ROLLBACK
+[0m10:19:49.472124 [debug] [ThreadPool]: On list_warehouse_main_stg: ROLLBACK
+[0m10:19:49.473329 [debug] [ThreadPool]: On list_warehouse_main_trf: ROLLBACK
+[0m10:19:49.510499 [debug] [ThreadPool]: Failed to rollback 'list_warehouse_main_raw'
+[0m10:19:49.511324 [debug] [ThreadPool]: On list_warehouse_main_raw: Close
+[0m10:19:49.513753 [debug] [ThreadPool]: Failed to rollback 'list_warehouse_main_trf'
+[0m10:19:49.514304 [debug] [ThreadPool]: On list_warehouse_main_trf: Close
+[0m10:19:49.515698 [debug] [ThreadPool]: Failed to rollback 'list_warehouse_main_stg'
+[0m10:19:49.516059 [debug] [ThreadPool]: On list_warehouse_main_stg: Close
+[0m10:19:49.517422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3ee3593a-1684-4de7-ad9f-ade90ce64810', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F969E60>]}
+[0m10:19:49.517992 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:19:49.518318 [debug] [MainThread]: On master: BEGIN
+[0m10:19:49.518602 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:19:49.519466 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m10:19:49.519816 [debug] [MainThread]: On master: COMMIT
+[0m10:19:49.520127 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:19:49.520402 [debug] [MainThread]: On master: COMMIT
+[0m10:19:49.521109 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:19:49.521513 [debug] [MainThread]: On master: Close
+[0m10:19:49.530008 [debug] [Thread-1 (]: Began running node test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c
+[0m10:19:49.530491 [debug] [Thread-3 (]: Began running node test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb
+[0m10:19:49.530848 [debug] [Thread-4 (]: Began running node test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41
+[0m10:19:49.531319 [debug] [Thread-2 (]: Began running node test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773
+[0m10:19:49.531820 [info ] [Thread-1 (]: 1 of 30 START test accepted_values_customer_KYC__0__1 .......................... [RUN]
+[0m10:19:49.532361 [info ] [Thread-3 (]: 3 of 30 START test accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE . [RUN]
+[0m10:19:49.534307 [debug] [Thread-1 (]: Acquiring new duckdb connection 'test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c'
+[0m10:19:49.535162 [debug] [Thread-3 (]: Acquiring new duckdb connection 'test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb'
+[0m10:19:49.533072 [info ] [Thread-4 (]: 4 of 30 START test accepted_values_customer_wantsNewsletter__0__1 .............. [RUN]
+[0m10:19:49.535915 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c
+[0m10:19:49.536441 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb
+[0m10:19:49.533514 [info ] [Thread-2 (]: 2 of 30 START test accepted_values_customer_VIP__0__1 .......................... [RUN]
+[0m10:19:49.537237 [debug] [Thread-4 (]: Acquiring new duckdb connection 'test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41'
+[0m10:19:49.555737 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c"
+[0m10:19:49.561398 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb"
+[0m10:19:49.562093 [debug] [Thread-2 (]: Acquiring new duckdb connection 'test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773'
+[0m10:19:49.562782 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41
+[0m10:19:49.563696 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773
+[0m10:19:49.569238 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41"
+[0m10:19:49.573711 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773"
+[0m10:19:49.574432 [debug] [Thread-1 (]: Began executing node test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c
+[0m10:19:49.593281 [debug] [Thread-3 (]: Began executing node test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb
+[0m10:19:49.602245 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb"
+[0m10:19:49.603864 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c"
+[0m10:19:49.605134 [debug] [Thread-2 (]: Began executing node test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773
+[0m10:19:49.605790 [debug] [Thread-4 (]: Began executing node test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41
+[0m10:19:49.611764 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773"
+[0m10:19:49.615072 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41"
+[0m10:19:49.615834 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb"
+[0m10:19:49.616748 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb: BEGIN
+[0m10:19:49.617371 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c"
+[0m10:19:49.617901 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:19:49.618724 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41"
+[0m10:19:49.619178 [debug] [Thread-1 (]: On test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c: BEGIN
+[0m10:19:49.619595 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773"
+[0m10:19:49.620671 [debug] [Thread-4 (]: On test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41: BEGIN
+[0m10:19:49.621245 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.621612 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:19:49.622089 [debug] [Thread-2 (]: On test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773: BEGIN
+[0m10:19:49.622551 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:19:49.622868 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb"
+[0m10:19:49.623807 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:19:49.624941 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.625803 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        state as value_field,
+        count(*) as n_records
+
+    from "warehouse"."main_raw"."customer"
+    group by state
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'VALIDATED','SIGNUP','INACTIVE'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.626548 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m10:19:49.628182 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c"
+[0m10:19:49.629151 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.630015 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41"
+[0m10:19:49.630486 [debug] [Thread-1 (]: On test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        KYC as value_field,
+        count(*) as n_records
+
+    from "warehouse"."main_raw"."customer"
+    group by KYC
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '0','1'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.630977 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773"
+[0m10:19:49.631470 [debug] [Thread-4 (]: On test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        wantsNewsletter as value_field,
+        count(*) as n_records
+
+    from "warehouse"."main_raw"."customer"
+    group by wantsNewsletter
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '0','1'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.632370 [debug] [Thread-2 (]: On test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        VIP as value_field,
+        count(*) as n_records
+
+    from "warehouse"."main_raw"."customer"
+    group by VIP
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '0','1'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.632958 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m10:19:49.633673 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.637770 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb: ROLLBACK
+[0m10:19:49.638311 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.639130 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.641297 [debug] [Thread-1 (]: On test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c: ROLLBACK
+[0m10:19:49.644003 [debug] [Thread-4 (]: On test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41: ROLLBACK
+[0m10:19:49.645851 [debug] [Thread-2 (]: On test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773: ROLLBACK
+[0m10:19:49.647338 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb'
+[0m10:19:49.647977 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb: Close
+[0m10:19:49.648587 [info ] [Thread-3 (]: 3 of 30 PASS accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE ....... [[32mPASS[0m in 0.11s]
+[0m10:19:49.649466 [debug] [Thread-3 (]: Finished running node test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb
+[0m10:19:49.650084 [debug] [Thread-3 (]: Began running node test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a
+[0m10:19:49.651342 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c'
+[0m10:19:49.650708 [info ] [Thread-3 (]: 5 of 30 START test accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL ..... [RUN]
+[0m10:19:49.651977 [debug] [Thread-1 (]: On test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c: Close
+[0m10:19:49.652609 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.accepted_values_customer_state__VALIDATED__SIGNUP__INACTIVE.e1ca1269bb, now test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a)
+[0m10:19:49.653811 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a
+[0m10:19:49.653400 [info ] [Thread-1 (]: 1 of 30 PASS accepted_values_customer_KYC__0__1 ................................ [[32mPASS[0m in 0.12s]
+[0m10:19:49.654782 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41'
+[0m10:19:49.661487 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a"
+[0m10:19:49.662617 [debug] [Thread-1 (]: Finished running node test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c
+[0m10:19:49.663202 [debug] [Thread-4 (]: On test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41: Close
+[0m10:19:49.664215 [debug] [Thread-1 (]: Began running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9
+[0m10:19:49.665586 [info ] [Thread-4 (]: 4 of 30 PASS accepted_values_customer_wantsNewsletter__0__1 .................... [[32mPASS[0m in 0.13s]
+[0m10:19:49.666994 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773'
+[0m10:19:49.668962 [debug] [Thread-4 (]: Finished running node test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41
+[0m10:19:49.667920 [info ] [Thread-1 (]: 6 of 30 START test dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code  [RUN]
+[0m10:19:49.669664 [debug] [Thread-3 (]: Began executing node test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a
+[0m10:19:49.670137 [debug] [Thread-2 (]: On test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773: Close
+[0m10:19:49.670931 [debug] [Thread-4 (]: Began running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49
+[0m10:19:49.671737 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.accepted_values_customer_KYC__0__1.7db04dbc5c, now test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9)
+[0m10:19:49.676601 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a"
+[0m10:19:49.677735 [info ] [Thread-4 (]: 7 of 30 START test dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from  [RUN]
+[0m10:19:49.679672 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9
+[0m10:19:49.678809 [info ] [Thread-2 (]: 2 of 30 PASS accepted_values_customer_VIP__0__1 ................................ [[32mPASS[0m in 0.12s]
+[0m10:19:49.680720 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.accepted_values_customer_wantsNewsletter__0__1.d2b7998b41, now test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49)
+[0m10:19:49.695554 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9"
+[0m10:19:49.696783 [debug] [Thread-2 (]: Finished running node test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773
+[0m10:19:49.697498 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49
+[0m10:19:49.698068 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a"
+[0m10:19:49.698719 [debug] [Thread-2 (]: Began running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78
+[0m10:19:49.704425 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49"
+[0m10:19:49.704937 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a: BEGIN
+[0m10:19:49.705500 [info ] [Thread-2 (]: 8 of 30 START test dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type  [RUN]
+[0m10:19:49.706038 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:49.706440 [debug] [Thread-1 (]: Began executing node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9
+[0m10:19:49.706794 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.accepted_values_customer_VIP__0__1.93c0b14773, now test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78)
+[0m10:19:49.709417 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9"
+[0m10:19:49.710282 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78
+[0m10:19:49.711085 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.711704 [debug] [Thread-4 (]: Began executing node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49
+[0m10:19:49.717895 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78"
+[0m10:19:49.718520 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a"
+[0m10:19:49.720395 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49"
+[0m10:19:49.720960 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9"
+[0m10:19:49.721392 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        txType as value_field,
+        count(*) as n_records
+
+    from "warehouse"."main_raw"."transaction"
+    group by txType
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'DEPOSIT','WITHDRAWAL'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.721769 [debug] [Thread-1 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9: BEGIN
+[0m10:19:49.722688 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:49.723153 [debug] [Thread-2 (]: Began executing node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78
+[0m10:19:49.723679 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49"
+[0m10:19:49.727830 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78"
+[0m10:19:49.728810 [debug] [Thread-4 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49: BEGIN
+[0m10:19:49.729957 [debug] [Thread-3 (]: SQL status: OK in 0.008 seconds
+[0m10:19:49.730434 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m10:19:49.731039 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:49.731593 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9"
+[0m10:19:49.733795 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a: ROLLBACK
+[0m10:19:49.734380 [debug] [Thread-1 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        rate_date, currency_code
+    from "warehouse"."main_trf"."trf_currency_exchange"
+    group by rate_date, currency_code
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.734868 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m10:19:49.735514 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78"
+[0m10:19:49.735993 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49"
+[0m10:19:49.736737 [debug] [Thread-2 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78: BEGIN
+[0m10:19:49.737295 [debug] [Thread-4 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        customer_id, etl_valid_from
+    from "warehouse"."main_trf"."trf_customer_scd2"
+    group by customer_id, etl_valid_from
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.737809 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:49.739856 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.740390 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78"
+[0m10:19:49.740829 [debug] [Thread-2 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        transaction_date, customer_id, country_code, account_type
+    from "warehouse"."main_trf"."trf_transaction"
+    group by transaction_date, customer_id, country_code, account_type
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.741311 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m10:19:49.742787 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a'
+[0m10:19:49.743666 [debug] [Thread-4 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.744260 [debug] [Thread-3 (]: On test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a: Close
+[0m10:19:49.745669 [debug] [Thread-1 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9: ROLLBACK
+[0m10:19:49.747748 [debug] [Thread-4 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49: ROLLBACK
+[0m10:19:49.748172 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m10:19:49.748767 [info ] [Thread-3 (]: 5 of 30 PASS accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL ........... [[32mPASS[0m in 0.10s]
+[0m10:19:49.750875 [debug] [Thread-3 (]: Finished running node test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a
+[0m10:19:49.754305 [debug] [Thread-2 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78: ROLLBACK
+[0m10:19:49.754967 [debug] [Thread-3 (]: Began running node test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff
+[0m10:19:49.755688 [info ] [Thread-3 (]: 9 of 30 START test not_null_currency_exchange_baseRateEuro ..................... [RUN]
+[0m10:19:49.756689 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.accepted_values_transaction_txType__DEPOSIT__WITHDRAWAL.005c6de30a, now test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff)
+[0m10:19:49.757287 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff
+[0m10:19:49.764749 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff"
+[0m10:19:49.765602 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9'
+[0m10:19:49.766267 [debug] [Thread-1 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9: Close
+[0m10:19:49.767738 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49'
+[0m10:19:49.767192 [info ] [Thread-1 (]: 6 of 30 PASS dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code  [[32mPASS[0m in 0.10s]
+[0m10:19:49.768275 [debug] [Thread-3 (]: Began executing node test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff
+[0m10:19:49.768694 [debug] [Thread-4 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49: Close
+[0m10:19:49.769107 [debug] [Thread-1 (]: Finished running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9
+[0m10:19:49.771480 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff"
+[0m10:19:49.771977 [debug] [Thread-1 (]: Began running node test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f
+[0m10:19:49.772474 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78'
+[0m10:19:49.773023 [info ] [Thread-4 (]: 7 of 30 PASS dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from  [[32mPASS[0m in 0.09s]
+[0m10:19:49.773859 [debug] [Thread-2 (]: On test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78: Close
+[0m10:19:49.774209 [debug] [Thread-4 (]: Finished running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49
+[0m10:19:49.773486 [info ] [Thread-1 (]: 10 of 30 START test not_null_currency_exchange_currency ........................ [RUN]
+[0m10:19:49.775169 [debug] [Thread-4 (]: Began running node test.raysearch_project.not_null_currency_exchange_date.f508e913b3
+[0m10:19:49.774806 [info ] [Thread-2 (]: 8 of 30 PASS dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type  [[32mPASS[0m in 0.07s]
+[0m10:19:49.776087 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_currency_exchange_rate_date__currency_code.225df91bc9, now test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f)
+[0m10:19:49.777632 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff"
+[0m10:19:49.778631 [debug] [Thread-2 (]: Finished running node test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78
+[0m10:19:49.778149 [info ] [Thread-4 (]: 11 of 30 START test not_null_currency_exchange_date ............................ [RUN]
+[0m10:19:49.779159 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f
+[0m10:19:49.779681 [debug] [Thread-3 (]: On test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff: BEGIN
+[0m10:19:49.780204 [debug] [Thread-2 (]: Began running node test.raysearch_project.not_null_customer_customerID.cdb9e51021
+[0m10:19:49.780769 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_customer_scd2_customer_id__etl_valid_from.90b4e97f49, now test.raysearch_project.not_null_currency_exchange_date.f508e913b3)
+[0m10:19:49.785270 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f"
+[0m10:19:49.785909 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:49.786729 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.not_null_currency_exchange_date.f508e913b3
+[0m10:19:49.786364 [info ] [Thread-2 (]: 12 of 30 START test not_null_customer_customerID ............................... [RUN]
+[0m10:19:49.792048 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.not_null_currency_exchange_date.f508e913b3"
+[0m10:19:49.792979 [debug] [Thread-3 (]: SQL status: OK in 0.007 seconds
+[0m10:19:49.793659 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.dbt_utils_unique_combination_of_columns_trf_transaction_transaction_date__customer_id__country_code__account_type.a655f84d78, now test.raysearch_project.not_null_customer_customerID.cdb9e51021)
+[0m10:19:49.794355 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff"
+[0m10:19:49.794908 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.not_null_customer_customerID.cdb9e51021
+[0m10:19:49.795493 [debug] [Thread-1 (]: Began executing node test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f
+[0m10:19:49.796029 [debug] [Thread-3 (]: On test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select baseRateEuro
+from "warehouse"."main_raw"."currency_exchange"
+where baseRateEuro is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.800171 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.not_null_customer_customerID.cdb9e51021"
+[0m10:19:49.801713 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f"
+[0m10:19:49.802047 [debug] [Thread-4 (]: Began executing node test.raysearch_project.not_null_currency_exchange_date.f508e913b3
+[0m10:19:49.805071 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.not_null_currency_exchange_date.f508e913b3"
+[0m10:19:49.805814 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.806307 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f"
+[0m10:19:49.806656 [debug] [Thread-2 (]: Began executing node test.raysearch_project.not_null_customer_customerID.cdb9e51021
+[0m10:19:49.807156 [debug] [Thread-1 (]: On test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f: BEGIN
+[0m10:19:49.809781 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.not_null_customer_customerID.cdb9e51021"
+[0m10:19:49.812003 [debug] [Thread-3 (]: On test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff: ROLLBACK
+[0m10:19:49.812551 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:49.813372 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_date.f508e913b3"
+[0m10:19:49.814099 [debug] [Thread-4 (]: On test.raysearch_project.not_null_currency_exchange_date.f508e913b3: BEGIN
+[0m10:19:49.814575 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:49.814942 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.815646 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f"
+[0m10:19:49.815879 [debug] [Thread-1 (]: On test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select currency
+from "warehouse"."main_raw"."currency_exchange"
+where currency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.816111 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.816544 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff'
+[0m10:19:49.817066 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_customer_customerID.cdb9e51021"
+[0m10:19:49.817380 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_currency_exchange_date.f508e913b3"
+[0m10:19:49.817783 [debug] [Thread-3 (]: On test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff: Close
+[0m10:19:49.818103 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:19:49.818474 [debug] [Thread-2 (]: On test.raysearch_project.not_null_customer_customerID.cdb9e51021: BEGIN
+[0m10:19:49.818709 [debug] [Thread-4 (]: On test.raysearch_project.not_null_currency_exchange_date.f508e913b3: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_currency_exchange_date.f508e913b3"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from "warehouse"."main_raw"."currency_exchange"
+where date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.819478 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:49.819210 [info ] [Thread-3 (]: 9 of 30 PASS not_null_currency_exchange_baseRateEuro ........................... [[32mPASS[0m in 0.06s]
+[0m10:19:49.820804 [debug] [Thread-1 (]: On test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f: ROLLBACK
+[0m10:19:49.821338 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m10:19:49.821856 [debug] [Thread-3 (]: Finished running node test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff
+[0m10:19:49.822188 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.822822 [debug] [Thread-3 (]: Began running node test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b
+[0m10:19:49.823767 [debug] [Thread-4 (]: On test.raysearch_project.not_null_currency_exchange_date.f508e913b3: ROLLBACK
+[0m10:19:49.824211 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_customer_customerID.cdb9e51021"
+[0m10:19:49.825542 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f'
+[0m10:19:49.824649 [info ] [Thread-3 (]: 13 of 30 START test not_null_customer_latestUpdate ............................. [RUN]
+[0m10:19:49.826464 [debug] [Thread-2 (]: On test.raysearch_project.not_null_customer_customerID.cdb9e51021: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_customer_customerID.cdb9e51021"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customerID
+from "warehouse"."main_raw"."customer"
+where customerID is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.827116 [debug] [Thread-1 (]: On test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f: Close
+[0m10:19:49.827987 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_currency_exchange_baseRateEuro.f405e79eff, now test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b)
+[0m10:19:49.828960 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.not_null_currency_exchange_date.f508e913b3'
+[0m10:19:49.829655 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b
+[0m10:19:49.830770 [debug] [Thread-4 (]: On test.raysearch_project.not_null_currency_exchange_date.f508e913b3: Close
+[0m10:19:49.831017 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.830431 [info ] [Thread-1 (]: 10 of 30 PASS not_null_currency_exchange_currency .............................. [[32mPASS[0m in 0.05s]
+[0m10:19:49.834921 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b"
+[0m10:19:49.836115 [debug] [Thread-1 (]: Finished running node test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f
+[0m10:19:49.837851 [debug] [Thread-2 (]: On test.raysearch_project.not_null_customer_customerID.cdb9e51021: ROLLBACK
+[0m10:19:49.838249 [debug] [Thread-1 (]: Began running node test.raysearch_project.not_null_transaction_amount.8ca6f973e6
+[0m10:19:49.835632 [info ] [Thread-4 (]: 11 of 30 PASS not_null_currency_exchange_date .................................. [[32mPASS[0m in 0.05s]
+[0m10:19:49.838873 [info ] [Thread-1 (]: 14 of 30 START test not_null_transaction_amount ................................ [RUN]
+[0m10:19:49.839469 [debug] [Thread-4 (]: Finished running node test.raysearch_project.not_null_currency_exchange_date.f508e913b3
+[0m10:19:49.839978 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_currency_exchange_currency.3314a18e4f, now test.raysearch_project.not_null_transaction_amount.8ca6f973e6)
+[0m10:19:49.840501 [debug] [Thread-3 (]: Began executing node test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b
+[0m10:19:49.840763 [debug] [Thread-4 (]: Began running node test.raysearch_project.not_null_transaction_customerId.63105569e2
+[0m10:19:49.841103 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.not_null_transaction_amount.8ca6f973e6
+[0m10:19:49.844117 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b"
+[0m10:19:49.844956 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.not_null_customer_customerID.cdb9e51021'
+[0m10:19:49.848894 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.not_null_transaction_amount.8ca6f973e6"
+[0m10:19:49.845313 [info ] [Thread-4 (]: 15 of 30 START test not_null_transaction_customerId ............................ [RUN]
+[0m10:19:49.849543 [debug] [Thread-2 (]: On test.raysearch_project.not_null_customer_customerID.cdb9e51021: Close
+[0m10:19:49.850128 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_currency_exchange_date.f508e913b3, now test.raysearch_project.not_null_transaction_customerId.63105569e2)
+[0m10:19:49.850679 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.not_null_transaction_customerId.63105569e2
+[0m10:19:49.853113 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.not_null_transaction_customerId.63105569e2"
+[0m10:19:49.853830 [info ] [Thread-2 (]: 12 of 30 PASS not_null_customer_customerID ..................................... [[32mPASS[0m in 0.06s]
+[0m10:19:49.854529 [debug] [Thread-1 (]: Began executing node test.raysearch_project.not_null_transaction_amount.8ca6f973e6
+[0m10:19:49.855098 [debug] [Thread-2 (]: Finished running node test.raysearch_project.not_null_customer_customerID.cdb9e51021
+[0m10:19:49.855533 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b"
+[0m10:19:49.857610 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.not_null_transaction_amount.8ca6f973e6"
+[0m10:19:49.858011 [debug] [Thread-2 (]: Began running node test.raysearch_project.not_null_transaction_date.8d1d66da2c
+[0m10:19:49.858749 [debug] [Thread-3 (]: On test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b: BEGIN
+[0m10:19:49.859237 [debug] [Thread-4 (]: Began executing node test.raysearch_project.not_null_transaction_customerId.63105569e2
+[0m10:19:49.859780 [info ] [Thread-2 (]: 16 of 30 START test not_null_transaction_date .................................. [RUN]
+[0m10:19:49.860380 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:49.862791 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.not_null_transaction_customerId.63105569e2"
+[0m10:19:49.863437 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_customer_customerID.cdb9e51021, now test.raysearch_project.not_null_transaction_date.8d1d66da2c)
+[0m10:19:49.864572 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.not_null_transaction_date.8d1d66da2c
+[0m10:19:49.865108 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_amount.8ca6f973e6"
+[0m10:19:49.875695 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.not_null_transaction_date.8d1d66da2c"
+[0m10:19:49.876515 [debug] [Thread-3 (]: SQL status: OK in 0.016 seconds
+[0m10:19:49.877192 [debug] [Thread-1 (]: On test.raysearch_project.not_null_transaction_amount.8ca6f973e6: BEGIN
+[0m10:19:49.878451 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b"
+[0m10:19:49.878940 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_customerId.63105569e2"
+[0m10:19:49.879233 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:49.879582 [debug] [Thread-3 (]: On test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select latestUpdate
+from "warehouse"."main_raw"."customer"
+where latestUpdate is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.879881 [debug] [Thread-4 (]: On test.raysearch_project.not_null_transaction_customerId.63105569e2: BEGIN
+[0m10:19:49.880706 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:49.881128 [debug] [Thread-2 (]: Began executing node test.raysearch_project.not_null_transaction_date.8d1d66da2c
+[0m10:19:49.881538 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.883119 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.not_null_transaction_date.8d1d66da2c"
+[0m10:19:49.883403 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.883633 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.883827 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_amount.8ca6f973e6"
+[0m10:19:49.885164 [debug] [Thread-3 (]: On test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b: ROLLBACK
+[0m10:19:49.885433 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_customerId.63105569e2"
+[0m10:19:49.885825 [debug] [Thread-1 (]: On test.raysearch_project.not_null_transaction_amount.8ca6f973e6: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_transaction_amount.8ca6f973e6"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select amount
+from "warehouse"."main_raw"."transaction"
+where amount is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.886425 [debug] [Thread-4 (]: On test.raysearch_project.not_null_transaction_customerId.63105569e2: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_transaction_customerId.63105569e2"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customerId
+from "warehouse"."main_raw"."transaction"
+where customerId is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.886843 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_date.8d1d66da2c"
+[0m10:19:49.887714 [debug] [Thread-2 (]: On test.raysearch_project.not_null_transaction_date.8d1d66da2c: BEGIN
+[0m10:19:49.888124 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:49.888514 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m10:19:49.888755 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.890040 [debug] [Thread-4 (]: On test.raysearch_project.not_null_transaction_customerId.63105569e2: ROLLBACK
+[0m10:19:49.890945 [debug] [Thread-1 (]: On test.raysearch_project.not_null_transaction_amount.8ca6f973e6: ROLLBACK
+[0m10:19:49.891312 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.892140 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b'
+[0m10:19:49.893020 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_date.8d1d66da2c"
+[0m10:19:49.893990 [debug] [Thread-3 (]: On test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b: Close
+[0m10:19:49.894753 [debug] [Thread-2 (]: On test.raysearch_project.not_null_transaction_date.8d1d66da2c: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_transaction_date.8d1d66da2c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select date
+from "warehouse"."main_raw"."transaction"
+where date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.895617 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.not_null_transaction_customerId.63105569e2'
+[0m10:19:49.896523 [info ] [Thread-3 (]: 13 of 30 PASS not_null_customer_latestUpdate ................................... [[32mPASS[0m in 0.07s]
+[0m10:19:49.897334 [debug] [Thread-4 (]: On test.raysearch_project.not_null_transaction_customerId.63105569e2: Close
+[0m10:19:49.897734 [debug] [Thread-3 (]: Finished running node test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b
+[0m10:19:49.898514 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.898199 [info ] [Thread-4 (]: 15 of 30 PASS not_null_transaction_customerId .................................. [[32mPASS[0m in 0.05s]
+[0m10:19:49.899066 [debug] [Thread-3 (]: Began running node test.raysearch_project.not_null_transaction_txCurrency.7798fc4041
+[0m10:19:49.899726 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.not_null_transaction_amount.8ca6f973e6'
+[0m10:19:49.900113 [debug] [Thread-4 (]: Finished running node test.raysearch_project.not_null_transaction_customerId.63105569e2
+[0m10:19:49.901128 [debug] [Thread-2 (]: On test.raysearch_project.not_null_transaction_date.8d1d66da2c: ROLLBACK
+[0m10:19:49.901713 [debug] [Thread-1 (]: On test.raysearch_project.not_null_transaction_amount.8ca6f973e6: Close
+[0m10:19:49.901473 [info ] [Thread-3 (]: 17 of 30 START test not_null_transaction_txCurrency ............................ [RUN]
+[0m10:19:49.902157 [debug] [Thread-4 (]: Began running node test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de
+[0m10:19:49.902938 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_customer_latestUpdate.b0d9ffd70b, now test.raysearch_project.not_null_transaction_txCurrency.7798fc4041)
+[0m10:19:49.903408 [info ] [Thread-1 (]: 14 of 30 PASS not_null_transaction_amount ...................................... [[32mPASS[0m in 0.06s]
+[0m10:19:49.904272 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.not_null_transaction_txCurrency.7798fc4041
+[0m10:19:49.903812 [info ] [Thread-4 (]: 18 of 30 START test not_null_trf_currency_exchange_currency_code ............... [RUN]
+[0m10:19:49.904715 [debug] [Thread-1 (]: Finished running node test.raysearch_project.not_null_transaction_amount.8ca6f973e6
+[0m10:19:49.908122 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.not_null_transaction_txCurrency.7798fc4041"
+[0m10:19:49.908867 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_transaction_customerId.63105569e2, now test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de)
+[0m10:19:49.909529 [debug] [Thread-1 (]: Began running node test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2
+[0m10:19:49.910492 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.not_null_transaction_date.8d1d66da2c'
+[0m10:19:49.911200 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de
+[0m10:19:49.912156 [debug] [Thread-2 (]: On test.raysearch_project.not_null_transaction_date.8d1d66da2c: Close
+[0m10:19:49.911754 [info ] [Thread-1 (]: 19 of 30 START test not_null_trf_currency_exchange_rate_date ................... [RUN]
+[0m10:19:49.916247 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de"
+[0m10:19:49.917027 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_transaction_amount.8ca6f973e6, now test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2)
+[0m10:19:49.917978 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2
+[0m10:19:49.918254 [debug] [Thread-3 (]: Began executing node test.raysearch_project.not_null_transaction_txCurrency.7798fc4041
+[0m10:19:49.917599 [info ] [Thread-2 (]: 16 of 30 PASS not_null_transaction_date ........................................ [[32mPASS[0m in 0.05s]
+[0m10:19:49.921551 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2"
+[0m10:19:49.924171 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.not_null_transaction_txCurrency.7798fc4041"
+[0m10:19:49.924884 [debug] [Thread-2 (]: Finished running node test.raysearch_project.not_null_transaction_date.8d1d66da2c
+[0m10:19:49.925703 [debug] [Thread-4 (]: Began executing node test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de
+[0m10:19:49.926725 [debug] [Thread-2 (]: Began running node test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb
+[0m10:19:49.929802 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de"
+[0m10:19:49.931044 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_txCurrency.7798fc4041"
+[0m10:19:49.930571 [info ] [Thread-2 (]: 20 of 30 START test not_null_trf_customer_scd2_customer_id ..................... [RUN]
+[0m10:19:49.931629 [debug] [Thread-1 (]: Began executing node test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2
+[0m10:19:49.932087 [debug] [Thread-3 (]: On test.raysearch_project.not_null_transaction_txCurrency.7798fc4041: BEGIN
+[0m10:19:49.932597 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_transaction_date.8d1d66da2c, now test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb)
+[0m10:19:49.934814 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2"
+[0m10:19:49.935263 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:49.935715 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de"
+[0m10:19:49.936036 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb
+[0m10:19:49.936769 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de: BEGIN
+[0m10:19:49.940797 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb"
+[0m10:19:49.941278 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:49.941772 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m10:19:49.943064 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2"
+[0m10:19:49.943785 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_transaction_txCurrency.7798fc4041"
+[0m10:19:49.944342 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.944942 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2: BEGIN
+[0m10:19:49.945459 [debug] [Thread-3 (]: On test.raysearch_project.not_null_transaction_txCurrency.7798fc4041: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_transaction_txCurrency.7798fc4041"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select txCurrency
+from "warehouse"."main_raw"."transaction"
+where txCurrency is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.946132 [debug] [Thread-2 (]: Began executing node test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb
+[0m10:19:49.946827 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de"
+[0m10:19:49.947209 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:49.950718 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb"
+[0m10:19:49.951212 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select currency_code
+from "warehouse"."main_trf"."trf_currency_exchange"
+where currency_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.951497 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m10:19:49.952294 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m10:19:49.954255 [debug] [Thread-3 (]: On test.raysearch_project.not_null_transaction_txCurrency.7798fc4041: ROLLBACK
+[0m10:19:49.954711 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2"
+[0m10:19:49.955015 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.955501 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select rate_date
+from "warehouse"."main_trf"."trf_currency_exchange"
+where rate_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.956144 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb"
+[0m10:19:49.958042 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de: ROLLBACK
+[0m10:19:49.958640 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb: BEGIN
+[0m10:19:49.959103 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m10:19:49.960222 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.not_null_transaction_txCurrency.7798fc4041'
+[0m10:19:49.961139 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:49.961878 [debug] [Thread-3 (]: On test.raysearch_project.not_null_transaction_txCurrency.7798fc4041: Close
+[0m10:19:49.963108 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2: ROLLBACK
+[0m10:19:49.963855 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de'
+[0m10:19:49.964217 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m10:19:49.964899 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de: Close
+[0m10:19:49.964611 [info ] [Thread-3 (]: 17 of 30 PASS not_null_transaction_txCurrency .................................. [[32mPASS[0m in 0.06s]
+[0m10:19:49.965420 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb"
+[0m10:19:49.966360 [debug] [Thread-3 (]: Finished running node test.raysearch_project.not_null_transaction_txCurrency.7798fc4041
+[0m10:19:49.965886 [info ] [Thread-4 (]: 18 of 30 PASS not_null_trf_currency_exchange_currency_code ..................... [[32mPASS[0m in 0.06s]
+[0m10:19:49.966963 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2'
+[0m10:19:49.967293 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "warehouse"."main_trf"."trf_customer_scd2"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:49.967794 [debug] [Thread-3 (]: Began running node test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94
+[0m10:19:49.968186 [debug] [Thread-4 (]: Finished running node test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de
+[0m10:19:49.968521 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2: Close
+[0m10:19:49.969333 [debug] [Thread-4 (]: Began running node test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595
+[0m10:19:49.968979 [info ] [Thread-3 (]: 21 of 30 START test not_null_trf_customer_scd2_etl_valid_from .................. [RUN]
+[0m10:19:49.969898 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m10:19:49.970146 [info ] [Thread-4 (]: 22 of 30 START test not_null_trf_customer_scd2_is_current ...................... [RUN]
+[0m10:19:49.970900 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_transaction_txCurrency.7798fc4041, now test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94)
+[0m10:19:49.972174 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb: ROLLBACK
+[0m10:19:49.972516 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_currency_exchange_currency_code.753af6a7de, now test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595)
+[0m10:19:49.970485 [info ] [Thread-1 (]: 19 of 30 PASS not_null_trf_currency_exchange_rate_date ......................... [[32mPASS[0m in 0.05s]
+[0m10:19:49.972939 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94
+[0m10:19:49.973375 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595
+[0m10:19:49.973799 [debug] [Thread-1 (]: Finished running node test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2
+[0m10:19:49.978783 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94"
+[0m10:19:49.982820 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595"
+[0m10:19:49.983288 [debug] [Thread-1 (]: Began running node test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951
+[0m10:19:49.984773 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb'
+[0m10:19:49.984034 [info ] [Thread-1 (]: 23 of 30 START test not_null_trf_transaction_account_type ...................... [RUN]
+[0m10:19:49.985446 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb: Close
+[0m10:19:49.986068 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_currency_exchange_rate_date.e5151cbcc2, now test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951)
+[0m10:19:49.986704 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951
+[0m10:19:49.987058 [debug] [Thread-3 (]: Began executing node test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94
+[0m10:19:49.987402 [debug] [Thread-4 (]: Began executing node test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595
+[0m10:19:49.991407 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951"
+[0m10:19:49.987981 [info ] [Thread-2 (]: 20 of 30 PASS not_null_trf_customer_scd2_customer_id ........................... [[32mPASS[0m in 0.06s]
+[0m10:19:49.995808 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94"
+[0m10:19:49.998265 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595"
+[0m10:19:49.998853 [debug] [Thread-2 (]: Finished running node test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb
+[0m10:19:49.999511 [debug] [Thread-2 (]: Began running node test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b
+[0m10:19:50.000779 [debug] [Thread-1 (]: Began executing node test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951
+[0m10:19:50.000251 [info ] [Thread-2 (]: 24 of 30 START test not_null_trf_transaction_country_code ...................... [RUN]
+[0m10:19:50.001409 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94"
+[0m10:19:50.003729 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951"
+[0m10:19:50.004178 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595"
+[0m10:19:50.004530 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_customer_scd2_customer_id.7602333dfb, now test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b)
+[0m10:19:50.004839 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94: BEGIN
+[0m10:19:50.005243 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595: BEGIN
+[0m10:19:50.005571 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b
+[0m10:19:50.005835 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:50.006209 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:50.012408 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b"
+[0m10:19:50.013420 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951"
+[0m10:19:50.013859 [debug] [Thread-3 (]: SQL status: OK in 0.008 seconds
+[0m10:19:50.014319 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m10:19:50.014681 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951: BEGIN
+[0m10:19:50.015084 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94"
+[0m10:19:50.015464 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595"
+[0m10:19:50.015917 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:50.016185 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select etl_valid_from
+from "warehouse"."main_trf"."trf_customer_scd2"
+where etl_valid_from is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.016481 [debug] [Thread-2 (]: Began executing node test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b
+[0m10:19:50.016722 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select is_current
+from "warehouse"."main_trf"."trf_customer_scd2"
+where is_current is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.018936 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b"
+[0m10:19:50.019734 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.020185 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951"
+[0m10:19:50.020568 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m10:19:50.020842 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.021109 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select account_type
+from "warehouse"."main_trf"."trf_transaction"
+where account_type is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.022593 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595: ROLLBACK
+[0m10:19:50.023512 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94: ROLLBACK
+[0m10:19:50.023836 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b"
+[0m10:19:50.024469 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b: BEGIN
+[0m10:19:50.025041 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:50.025555 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m10:19:50.028396 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951: ROLLBACK
+[0m10:19:50.028860 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.029398 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b"
+[0m10:19:50.029920 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select country_code
+from "warehouse"."main_trf"."trf_transaction"
+where country_code is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.030407 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94'
+[0m10:19:50.030976 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94: Close
+[0m10:19:50.031720 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m10:19:50.031456 [info ] [Thread-3 (]: 21 of 30 PASS not_null_trf_customer_scd2_etl_valid_from ........................ [[32mPASS[0m in 0.06s]
+[0m10:19:50.032904 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b: ROLLBACK
+[0m10:19:50.033314 [debug] [Thread-3 (]: Finished running node test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94
+[0m10:19:50.033867 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595'
+[0m10:19:50.034385 [debug] [Thread-3 (]: Began running node test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73
+[0m10:19:50.034908 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595: Close
+[0m10:19:50.035666 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b'
+[0m10:19:50.035241 [info ] [Thread-3 (]: 25 of 30 START test not_null_trf_transaction_customer_id ....................... [RUN]
+[0m10:19:50.036358 [debug] [Thread-2 (]: On test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b: Close
+[0m10:19:50.036805 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_customer_scd2_etl_valid_from.2333e40f94, now test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73)
+[0m10:19:50.036086 [info ] [Thread-4 (]: 22 of 30 PASS not_null_trf_customer_scd2_is_current ............................ [[32mPASS[0m in 0.06s]
+[0m10:19:50.037843 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73
+[0m10:19:50.037544 [info ] [Thread-2 (]: 24 of 30 PASS not_null_trf_transaction_country_code ............................ [[32mPASS[0m in 0.03s]
+[0m10:19:50.038493 [debug] [Thread-4 (]: Finished running node test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595
+[0m10:19:50.043448 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73"
+[0m10:19:50.044453 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951'
+[0m10:19:50.045228 [debug] [Thread-2 (]: Finished running node test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b
+[0m10:19:50.045758 [debug] [Thread-4 (]: Began running node test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37
+[0m10:19:50.046276 [debug] [Thread-1 (]: On test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951: Close
+[0m10:19:50.046884 [debug] [Thread-2 (]: Began running node test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8
+[0m10:19:50.047506 [info ] [Thread-4 (]: 26 of 30 START test not_null_trf_transaction_transaction_date .................. [RUN]
+[0m10:19:50.049725 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_customer_scd2_is_current.59a6a18595, now test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37)
+[0m10:19:50.048459 [info ] [Thread-2 (]: 27 of 30 START test relationships_transaction_customerId__customerID__ref_customer_  [RUN]
+[0m10:19:50.050176 [debug] [Thread-3 (]: Began executing node test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73
+[0m10:19:50.050472 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37
+[0m10:19:50.050795 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_transaction_country_code.6e598f518b, now test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8)
+[0m10:19:50.049267 [info ] [Thread-1 (]: 23 of 30 PASS not_null_trf_transaction_account_type ............................ [[32mPASS[0m in 0.06s]
+[0m10:19:50.052528 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73"
+[0m10:19:50.055446 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37"
+[0m10:19:50.055820 [debug] [Thread-2 (]: Began compiling node test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8
+[0m10:19:50.056240 [debug] [Thread-1 (]: Finished running node test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951
+[0m10:19:50.065267 [debug] [Thread-2 (]: Writing injected SQL for node "test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8"
+[0m10:19:50.065865 [debug] [Thread-1 (]: Began running node test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506
+[0m10:19:50.066763 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73"
+[0m10:19:50.067480 [debug] [Thread-4 (]: Began executing node test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37
+[0m10:19:50.067113 [info ] [Thread-1 (]: 28 of 30 START test relationships_transaction_txCurrency__currency__ref_currency_exchange_  [RUN]
+[0m10:19:50.068129 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73: BEGIN
+[0m10:19:50.070818 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37"
+[0m10:19:50.071280 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_transaction_account_type.0785bb4951, now test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506)
+[0m10:19:50.071647 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:50.072153 [debug] [Thread-1 (]: Began compiling node test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506
+[0m10:19:50.072535 [debug] [Thread-2 (]: Began executing node test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8
+[0m10:19:50.079066 [debug] [Thread-1 (]: Writing injected SQL for node "test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506"
+[0m10:19:50.080860 [debug] [Thread-2 (]: Writing runtime sql for node "test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8"
+[0m10:19:50.081339 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m10:19:50.082009 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73"
+[0m10:19:50.082360 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37"
+[0m10:19:50.082625 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from "warehouse"."main_trf"."trf_transaction"
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.083607 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37: BEGIN
+[0m10:19:50.084300 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:50.084655 [debug] [Thread-1 (]: Began executing node test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506
+[0m10:19:50.085405 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8"
+[0m10:19:50.087145 [debug] [Thread-1 (]: Writing runtime sql for node "test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506"
+[0m10:19:50.087462 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m10:19:50.087788 [debug] [Thread-2 (]: On test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8: BEGIN
+[0m10:19:50.088009 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.089407 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73: ROLLBACK
+[0m10:19:50.089822 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:19:50.090355 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37"
+[0m10:19:50.091454 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506"
+[0m10:19:50.092087 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select transaction_date
+from "warehouse"."main_trf"."trf_transaction"
+where transaction_date is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.092621 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m10:19:50.093047 [debug] [Thread-1 (]: On test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506: BEGIN
+[0m10:19:50.093876 [debug] [Thread-2 (]: Using duckdb connection "test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8"
+[0m10:19:50.094528 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:19:50.095022 [debug] [Thread-4 (]: SQL status: OK in 0.002 seconds
+[0m10:19:50.095660 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73'
+[0m10:19:50.096139 [debug] [Thread-2 (]: On test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customerId as from_field
+    from "warehouse"."main_raw"."transaction"
+    where customerId is not null
+),
+
+parent as (
+    select customerID as to_field
+    from "warehouse"."main_raw"."customer"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.097804 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37: ROLLBACK
+[0m10:19:50.098095 [debug] [Thread-3 (]: On test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73: Close
+[0m10:19:50.098347 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.099670 [debug] [Thread-1 (]: Using duckdb connection "test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506"
+[0m10:19:50.099343 [info ] [Thread-3 (]: 25 of 30 PASS not_null_trf_transaction_customer_id ............................. [[32mPASS[0m in 0.06s]
+[0m10:19:50.100267 [debug] [Thread-1 (]: On test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select txCurrency as from_field
+    from "warehouse"."main_raw"."transaction"
+    where txCurrency is not null
+),
+
+parent as (
+    select currency as to_field
+    from "warehouse"."main_raw"."currency_exchange"
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.100878 [debug] [Thread-3 (]: Finished running node test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73
+[0m10:19:50.101681 [debug] [Thread-3 (]: Began running node test.raysearch_project.trf_transaction_customer_on_day
+[0m10:19:50.102682 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m10:19:50.103235 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37'
+[0m10:19:50.102286 [info ] [Thread-3 (]: 29 of 30 START test trf_transaction_customer_on_day ............................ [RUN]
+[0m10:19:50.103719 [debug] [Thread-4 (]: On test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37: Close
+[0m10:19:50.105240 [debug] [Thread-2 (]: On test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8: ROLLBACK
+[0m10:19:50.105819 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_transaction_customer_id.a1a6396f73, now test.raysearch_project.trf_transaction_customer_on_day)
+[0m10:19:50.106435 [info ] [Thread-4 (]: 26 of 30 PASS not_null_trf_transaction_transaction_date ........................ [[32mPASS[0m in 0.06s]
+[0m10:19:50.107148 [debug] [Thread-3 (]: Began compiling node test.raysearch_project.trf_transaction_customer_on_day
+[0m10:19:50.107859 [debug] [Thread-4 (]: Finished running node test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37
+[0m10:19:50.112122 [debug] [Thread-3 (]: Writing injected SQL for node "test.raysearch_project.trf_transaction_customer_on_day"
+[0m10:19:50.113096 [debug] [Thread-4 (]: Began running node test.raysearch_project.trf_transaction_exchange_on_day
+[0m10:19:50.114745 [debug] [Thread-2 (]: Failed to rollback 'test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8'
+[0m10:19:50.113908 [info ] [Thread-4 (]: 30 of 30 START test trf_transaction_exchange_on_day ............................ [RUN]
+[0m10:19:50.115396 [debug] [Thread-2 (]: On test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8: Close
+[0m10:19:50.115960 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.raysearch_project.not_null_trf_transaction_transaction_date.645dbc8e37, now test.raysearch_project.trf_transaction_exchange_on_day)
+[0m10:19:50.116491 [debug] [Thread-4 (]: Began compiling node test.raysearch_project.trf_transaction_exchange_on_day
+[0m10:19:50.121680 [debug] [Thread-4 (]: Writing injected SQL for node "test.raysearch_project.trf_transaction_exchange_on_day"
+[0m10:19:50.122710 [debug] [Thread-1 (]: SQL status: OK in 0.021 seconds
+[0m10:19:50.122192 [info ] [Thread-2 (]: 27 of 30 PASS relationships_transaction_customerId__customerID__ref_customer_ .. [[32mPASS[0m in 0.07s]
+[0m10:19:50.123806 [debug] [Thread-2 (]: Finished running node test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8
+[0m10:19:50.124218 [debug] [Thread-3 (]: Began executing node test.raysearch_project.trf_transaction_customer_on_day
+[0m10:19:50.128031 [debug] [Thread-3 (]: Writing runtime sql for node "test.raysearch_project.trf_transaction_customer_on_day"
+[0m10:19:50.129637 [debug] [Thread-1 (]: On test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506: ROLLBACK
+[0m10:19:50.130075 [debug] [Thread-4 (]: Began executing node test.raysearch_project.trf_transaction_exchange_on_day
+[0m10:19:50.133286 [debug] [Thread-4 (]: Writing runtime sql for node "test.raysearch_project.trf_transaction_exchange_on_day"
+[0m10:19:50.134055 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.trf_transaction_customer_on_day"
+[0m10:19:50.134334 [debug] [Thread-3 (]: On test.raysearch_project.trf_transaction_customer_on_day: BEGIN
+[0m10:19:50.134548 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:19:50.135491 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m10:19:50.135929 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.trf_transaction_exchange_on_day"
+[0m10:19:50.136372 [debug] [Thread-3 (]: Using duckdb connection "test.raysearch_project.trf_transaction_customer_on_day"
+[0m10:19:50.136696 [debug] [Thread-4 (]: On test.raysearch_project.trf_transaction_exchange_on_day: BEGIN
+[0m10:19:50.137196 [debug] [Thread-1 (]: Failed to rollback 'test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506'
+[0m10:19:50.137692 [debug] [Thread-3 (]: On test.raysearch_project.trf_transaction_customer_on_day: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.trf_transaction_customer_on_day"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select t.transaction_date, t.customer_id
+from "warehouse"."main_stg"."stg_transaction" t
+left join "warehouse"."main_trf"."trf_customer_scd2" c
+  on c.customer_id = t.customer_id
+ and t.transaction_date between c.etl_valid_from and c.etl_valid_to
+where c.customer_id is null
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.138331 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:19:50.138751 [debug] [Thread-1 (]: On test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506: Close
+[0m10:19:50.141056 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m10:19:50.140244 [info ] [Thread-1 (]: 28 of 30 PASS relationships_transaction_txCurrency__currency__ref_currency_exchange_  [[32mPASS[0m in 0.07s]
+[0m10:19:50.142186 [debug] [Thread-4 (]: Using duckdb connection "test.raysearch_project.trf_transaction_exchange_on_day"
+[0m10:19:50.143069 [debug] [Thread-1 (]: Finished running node test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506
+[0m10:19:50.143712 [debug] [Thread-4 (]: On test.raysearch_project.trf_transaction_exchange_on_day: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "raysearch_project", "target_name": "dev", "node_id": "test.raysearch_project.trf_transaction_exchange_on_day"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  select t.transaction_date, t.currency
+from "warehouse"."main_stg"."stg_transaction" t
+left join "warehouse"."main_trf"."trf_currency_exchange" x
+  on x.currency_code = t.currency
+ and t.transaction_date = x.rate_date
+where x.currency_code is null
+  
+  
+      
+    ) dbt_internal_test
+[0m10:19:50.149289 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m10:19:50.151121 [debug] [Thread-3 (]: On test.raysearch_project.trf_transaction_customer_on_day: ROLLBACK
+[0m10:19:50.152052 [debug] [Thread-3 (]: Failed to rollback 'test.raysearch_project.trf_transaction_customer_on_day'
+[0m10:19:50.152306 [debug] [Thread-3 (]: On test.raysearch_project.trf_transaction_customer_on_day: Close
+[0m10:19:50.153000 [info ] [Thread-3 (]: 29 of 30 PASS trf_transaction_customer_on_day .................................. [[32mPASS[0m in 0.05s]
+[0m10:19:50.153924 [debug] [Thread-3 (]: Finished running node test.raysearch_project.trf_transaction_customer_on_day
+[0m10:19:50.155636 [debug] [Thread-4 (]: SQL status: OK in 0.011 seconds
+[0m10:19:50.157918 [debug] [Thread-4 (]: On test.raysearch_project.trf_transaction_exchange_on_day: ROLLBACK
+[0m10:19:50.159690 [debug] [Thread-4 (]: Failed to rollback 'test.raysearch_project.trf_transaction_exchange_on_day'
+[0m10:19:50.160337 [debug] [Thread-4 (]: On test.raysearch_project.trf_transaction_exchange_on_day: Close
+[0m10:19:50.161002 [info ] [Thread-4 (]: 30 of 30 PASS trf_transaction_exchange_on_day .................................. [[32mPASS[0m in 0.05s]
+[0m10:19:50.161815 [debug] [Thread-4 (]: Finished running node test.raysearch_project.trf_transaction_exchange_on_day
+[0m10:19:50.163472 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:19:50.163731 [debug] [MainThread]: On master: BEGIN
+[0m10:19:50.163893 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:19:50.164418 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m10:19:50.164599 [debug] [MainThread]: On master: COMMIT
+[0m10:19:50.164755 [debug] [MainThread]: Using duckdb connection "master"
+[0m10:19:50.164898 [debug] [MainThread]: On master: COMMIT
+[0m10:19:50.165206 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m10:19:50.165404 [debug] [MainThread]: On master: Close
+[0m10:19:50.165635 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:19:50.165796 [debug] [MainThread]: Connection 'list_warehouse_main_trf' was properly closed.
+[0m10:19:50.165942 [debug] [MainThread]: Connection 'list_warehouse_main_stg' was properly closed.
+[0m10:19:50.166095 [debug] [MainThread]: Connection 'list_warehouse_main_raw' was properly closed.
+[0m10:19:50.166237 [debug] [MainThread]: Connection 'test.raysearch_project.relationships_transaction_txCurrency__currency__ref_currency_exchange_.b837e7b506' was properly closed.
+[0m10:19:50.166382 [debug] [MainThread]: Connection 'test.raysearch_project.trf_transaction_customer_on_day' was properly closed.
+[0m10:19:50.166521 [debug] [MainThread]: Connection 'test.raysearch_project.trf_transaction_exchange_on_day' was properly closed.
+[0m10:19:50.166661 [debug] [MainThread]: Connection 'test.raysearch_project.relationships_transaction_customerId__customerID__ref_customer_.07ef3b4fe8' was properly closed.
+[0m10:19:50.166894 [info ] [MainThread]: 
+[0m10:19:50.167403 [info ] [MainThread]: Finished running 30 data tests in 0 hours 0 minutes and 7.57 seconds (7.57s).
+[0m10:19:50.170191 [debug] [MainThread]: Command end result
+[0m10:19:50.197722 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\AMANDAKA\Workspaces\raysearch_project\target\manifest.json
+[0m10:19:50.200703 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\AMANDAKA\Workspaces\raysearch_project\target\semantic_manifest.json
+[0m10:19:50.207790 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\AMANDAKA\Workspaces\raysearch_project\target\run_results.json
+[0m10:19:50.208209 [info ] [MainThread]: 
+[0m10:19:50.208979 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:19:50.209596 [info ] [MainThread]: 
+[0m10:19:50.210192 [info ] [MainThread]: Done. PASS=30 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=30
+[0m10:19:50.211390 [debug] [MainThread]: Command `dbt test` succeeded at 10:19:50.211251 after 13.54 seconds
+[0m10:19:50.211825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767DE3B890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F94FA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001767F94F540>]}
+[0m10:19:50.212169 [debug] [MainThread]: Flushing usage events
+[0m10:19:50.962664 [debug] [MainThread]: An error was encountered while trying to flush usage events
