@@ -1,6 +1,7 @@
 {% snapshot customer_snapshot %}
 {{
   config(
+    enabled=false,
     target_schema='main_trf',
     unique_key='customerID',
     strategy='timestamp',
