@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor
+.DS_Store
+
+# dbt build outputs
+logs/
+target/
+dbt_packages/
+
+# DuckDB files
+warehouse.duckdb
+*.duckdb
+*.duckdb.wal
