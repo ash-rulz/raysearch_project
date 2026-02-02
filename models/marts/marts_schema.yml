@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Customer dimension (SCD2) landing in schema dm
+    columns:
+      - name: customer_sk
+        description: Integer surrogate key unique across the entire dimension
+        tests: [not_null, unique]
+      - name: customer_id
+        description: Business customer identifier
+        tests: [not_null]
+      - name: etl_valid_from
+        description: SCD2 start date
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [customer_id, etl_valid_from]
+
+  - name: fact_transaction
+    description: Transaction fact table with FK to dim_customer via customer_sk
+    columns:
+      - name: customer_fk
+        description: Surrogate key referencing dim_customer.customer_sk
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_sk
+      - name: transaction_date
+        tests: [not_null]
+      - name: account_type_code
+        tests: [not_null]
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: [transaction_date, customer_fk, account_type_code]
