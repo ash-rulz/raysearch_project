@@ -42,8 +42,8 @@ select
     withdrawal,
     deposit,
     sum(deposit - withdrawal) over (
-        partition by customer_id, country_code, account_type
-        order by transaction_date
+        partition by customer_id
+        order by transaction_date asc
         rows between unbounded preceding and current row
     ) as balance
 from agg
