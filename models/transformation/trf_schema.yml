@@ -39,14 +39,3 @@ models:
     tests:
       - dbt_utils.unique_combination_of_columns:
           combination_of_columns: [transaction_date, customer_id, country_code, account_type]
-
-  - name: trf_currency_exchange
-    description: SCD2 exchange rate timeline for a single currency
-    columns:
-      - name: rate_date
-        tests: [not_null]
-      - name: currency_code
-        tests: [not_null]
-    tests:
-      - dbt_utils.unique_combination_of_columns:
-          combination_of_columns: [rate_date, currency_code]

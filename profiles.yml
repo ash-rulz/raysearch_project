@@ -1,0 +1,8 @@
+raysearch_project:
+  outputs:
+    dev:
+      type: duckdb
+      path: warehouse.duckdb
+      schema: main
+      threads: 4
+  target: dev
