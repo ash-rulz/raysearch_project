@@ -34,4 +34,17 @@ agg as (
     from joined
     group by transaction_date, customer_id, country_code, account_type
 )
-select * from agg
+select
+    transaction_date,
+    customer_id,
+    country_code,
+    account_type,
+    withdrawal,
+    deposit,
+    sum(deposit - withdrawal) over (
+        partition by customer_id, country_code, account_type
+        order by transaction_date
+        rows between unbounded preceding and current row
+    ) as balance
+from agg
+where withdrawal <> 0 or deposit <> 0
