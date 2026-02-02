@@ -19,3 +19,5 @@ dbt_packages/
 warehouse.duckdb
 *.duckdb
 *.duckdb.wal
+
+*.user.yml

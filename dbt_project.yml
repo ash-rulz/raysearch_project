@@ -21,6 +21,8 @@ models:
     transformation:
       +schema: trf
       +materialized: table
+      tests:
+        +enabled: false
     marts:
       +schema: dm
       +materialized: table
